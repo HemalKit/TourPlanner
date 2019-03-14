@@ -1,0 +1,13 @@
+<div class="input-group">
+  <input type="text" class="form-control" [(ngModel)]="searchText" />
+</div>
+<hr />
+
+<div *ngIf="searchText" class="col-md-8">
+  <ul class="list-group" *ngFor="let result of searchResults">
+    <button type="button" class="list-group-item" *ngIf="result.toLowerCase().startsWith(searchText.toLowerCase())" (click)="clickMe(result)"> {{ result }}</button>
+  </ul>
+</div>
+<br />
+<hr />
+<div class="col-md-6"><app-tour [destinationList]="destinationList"></app-tour></div>
