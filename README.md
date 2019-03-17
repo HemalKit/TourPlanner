@@ -1,6 +1,6 @@
 ## TourPlanner
 
-This Travel website is developing to faclitate followings
+This Travel website is being developed to facilitate followings.
 
 High-quality photography
 A brief summary of the area, with highlights of important places
